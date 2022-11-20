@@ -51,6 +51,8 @@ class TaskAction:
         self.source_location = source_location  # Source location name
         self.target_location = target_location  # Target location name
         self.pose = pose  # Target pose
+        if self.pose is not None:
+            self.has_pose = True
         self.path = path  # Path object containing a list of poses
 
     def __repr__(self):

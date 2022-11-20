@@ -11,7 +11,8 @@ string target_location
 # Action cost (from the output of a planner)
 float32 cost
 
-# Other parameters
-bool has_pose
-geometry_msgs/Pose pose
 pyrobosim_msgs/Path path
+
+bool has_pose
+# TODO(andyz): which frame is this in? Probably "map"
+geometry_msgs/Pose pose
